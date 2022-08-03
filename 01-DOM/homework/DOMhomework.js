@@ -58,6 +58,7 @@ function buildToDo(todo, index) {
   var toDoText = document.createElement("span");
   toDoText.innerHTML = todo.description;
   toDoText.id = index;
+  toDoText.addEventListener("click", completeToDo);
   if (todo.complete) {
     toDoText.className = "completeText";
   }
@@ -122,7 +123,7 @@ function addToDo() {
 //   2) Agregarle un 'click' event listener, pasándole la función 'addToDo' como callback
 // Tu código acá:
 var addButton = document.querySelector("#addButton");
-addButton.addEventListener("click", addToDo());
+addButton.addEventListener("click", addToDo);
 
 // La función completeToDo se va a ejecutar cuando queramos completar un todo
 // [NOTA: Algunas cuestiones a tener en cuenta
