@@ -5,7 +5,7 @@ export default function SearchBar({ onSearch }) {
   return (
     <div>
       <input type="text" placeholder="Ciudad" />
-      <button onClick={() => onSearch}>Agregar</button>
+      <button onClick={() => onSearch("ciudad")}>Agregar</button>
     </div>
   )
-};
+}; 

@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from "../styles/Card.modules.css"
 
 export default function Card({ max, min, name, img, onClose }) {
   // acá va tu código
   return (
     <div>
-      <button onClick={onClose}>X</button>
-      <h2>{name}</h2>
+      <button className={`${styles.button}`} onClick={onClose}>X</button>
+      <h2 className={styles.name}>{name}</h2>
       <div>
         <h3>Min</h3>
         <h3>{min}</h3>

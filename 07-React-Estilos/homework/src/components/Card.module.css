@@ -1,0 +1,17 @@
+.card {
+    color: #03045E;
+    background-color: #0077B6;
+    border-radius: 50px;
+    font-family: 'Rubik', sans-serif;
+    display: inline-block;
+    padding: 20px;
+    margin: 70px;
+    box-shadow: 10px 5px 5px black; 
+}
+
+.card button {
+    border-radius: 50px;
+    border: solid black;
+    float: right;
+    background-color: #90E0EF;
+}
