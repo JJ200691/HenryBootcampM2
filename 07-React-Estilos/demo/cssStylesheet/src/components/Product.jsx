@@ -1,13 +1,13 @@
 import React from 'react';
 import './Product.css'; // global para todo
 
-function Product(props) {
+function Producto(props) {
   return (
-    <div className="producto">
+    <div className="product">
       <h3>{props.title}</h3>
       <p>{props.price}</p>
     </div>
   );
 }
 
-export default Product;
+export default Producto;
