@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Cards from './components/Cards.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import data from './data.js';
