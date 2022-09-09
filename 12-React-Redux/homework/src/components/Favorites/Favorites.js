@@ -5,7 +5,6 @@ import './Favorites.css';
 import { removeMovieFavorite } from "../../actions"
 
 export class ConnectedList extends Component {
-
   render() {
     return (
       <div>
