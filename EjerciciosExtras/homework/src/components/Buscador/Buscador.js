@@ -53,7 +53,7 @@ export class Buscador extends Component {
 
 export function mapStateToProps(state) {
   return {
-    state: state.posts
+    posts: state.posts
   }
 }
 
