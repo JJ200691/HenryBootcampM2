@@ -20,7 +20,6 @@ export class Users extends Component {
             </tr>
           </thead>
           <tbody>
-           
           </tbody>
         </table>
       </div>
@@ -28,5 +27,17 @@ export class Users extends Component {
   }
 }
 
-export default Users
+export function mapStateToProps(state) {
+  return {
+    users: state.users
+  }
+}
+
+export function mapDispatchToProps(dispatch) {
+  return {
+    getAllUsers: () => dispatch(getAllUsers())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Users);
 
